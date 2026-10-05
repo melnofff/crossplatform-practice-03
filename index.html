@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Практика 3 — Файловый просмотрщик</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="renderer.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Кросс-платформенная разработка · Практика 3 · Вариант 4</p>
+      <h1>Файловый просмотрщик</h1>
+      <p class="student">Мельников Данила Вячеславович · ТРПО23-2</p>
+    </header>
+    <section aria-label="Содержимое рабочего каталога">
+      <div class="toolbar">
+        <button id="show-directory" type="button">Показать содержимое каталога</button>
+        <p class="hint">Обновление: меню «Файл» или Ctrl+R</p>
+      </div>
+      <p class="label">Рабочий каталог</p>
+      <p id="directory">Нажмите кнопку, чтобы прочитать каталог запуска.</p>
+      <p id="status" role="status" aria-live="polite">Список ещё не загружен.</p>
+      <ul id="entries" aria-label="Файлы и каталоги"></ul>
+    </section>
+    <footer>Каталоги выделены жирным. Просмотр не изменяет файлы.</footer>
+  </main>
+</body>
+</html>

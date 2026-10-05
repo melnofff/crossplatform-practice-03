@@ -1,0 +1,47 @@
+{
+  "name": "crossplatform-practice-03",
+  "version": "1.0.0",
+  "description": "Файловый просмотрщик Electron, практика 3, вариант 4",
+  "author": "Мельников Данила Вячеславович, ТРПО23-2",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis --x64",
+    "test": "node --test служебные/directory.test.cjs"
+  },
+  "build": {
+    "appId": "ru.fa.melnikov.fileexplorer",
+    "productName": "Electron File Explorer",
+    "artifactName": "Electron-File-Explorer-${version}-${arch}.${ext}",
+    "files": [
+      "main.js",
+      "directory.js",
+      "preload.js",
+      "renderer.js",
+      "index.html",
+      "styles.css",
+      "package.json"
+    ],
+    "asar": true,
+    "win": {
+      "target": "nsis",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "linux": {
+      "target": "AppImage"
+    },
+    "mac": {
+      "target": "dmg"
+    }
+  },
+  "devDependencies": {
+    "electron": "44.5.1",
+    "electron-builder": "26.15.3"
+  }
+}

@@ -24,4 +24,5 @@ preload.js предоставляет узкий API; renderer.js обновля
 contextIsolation=true, nodeIntegration=false, sandbox=true.
 Меню и кнопка вызывают одну функцию обновления. Произвольные пути через IPC запрещены.
 
-Удалённый репозиторий и push пока не выполнены. Публикация требует отдельного разрешения.
+Публичный репозиторий: https://github.com/melnofff/crossplatform-practice-03
+Отчёт находится в report/. Материалы сравнения с нативной C-программой — в материалы/native-comparison/.

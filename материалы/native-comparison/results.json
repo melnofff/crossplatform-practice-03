@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-05",
+  "platform": "Windows x64",
+  "compiler": "MSVC 14.50.35719.0",
+  "native": {
+    "md": {
+      "bytes": 9216,
+      "output": "Hello, world!",
+      "exit_code": 0,
+      "sha256": "a3f42c17dc682915dc0168d1ccad2abf33138bb31390a7f3f4e2ba677a5791f9"
+    },
+    "mt": {
+      "bytes": 108032,
+      "output": "Hello, world!",
+      "exit_code": 0,
+      "sha256": "f4120d520447444af68ff364c60843526088288736e492a32a0604bcfd9b4e6f"
+    }
+  },
+  "electron": {
+    "installer_bytes": 111230232,
+    "unpacked_bytes": 384945324
+  }
+}

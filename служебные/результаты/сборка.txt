@@ -1,0 +1,15 @@
+Результат сборки Windows x64
+
+> npm run dist
+electron-builder 26.15.3
+Electron 44.5.1
+NSIS: Electron-File-Explorer-1.0.0-x64.exe
+
+> Get-Item dist/Electron-File-Explorer-1.0.0-x64.exe
+Length: 111230232 bytes
+Size: 106.08 MiB
+
+> Get-AuthenticodeSignature
+Status: NotSigned
+
+Распакованный комплект: 384945324 bytes
